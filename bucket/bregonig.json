@@ -1,0 +1,21 @@
+{
+    "version": "4.20",
+    "url": "https://bitbucket.org/k_takata/bregonig/downloads/bron420.zip",
+    "homepage": "http://k-takata.o.oo7.jp/mysoft/bregonig.html",
+    "hash": "15f58dd292aa6fc8fd592fa97a75d58b5680ddf7aa66ba10a2dd5c9f0ee159c1",
+    "architecture": {
+        "32bit": {
+            "extract_dir": ""
+        },
+        "64bit": {
+            "extract_dir": "x64"
+        }
+    },
+    "checkver": {
+        "regex": "bregonig\\.dll Ver\\.(?<major>\\d+)\\.(?<minor>\\d+)",
+        "replace": "${major}.${minor}"
+    },
+    "autoupdate": {
+        "url": "https://bitbucket.org/k_takata/bregonig/downloads/bron$matchMajor$matchMinor.zip"
+    }
+}
