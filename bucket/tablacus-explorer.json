@@ -1,0 +1,49 @@
+{
+    "license": "MIT",
+    "hash": "4e243d03b7ec2da3e8b4f37cfd317e17bd5d0b6dde30160e52f0d0f7aded72e9",
+    "homepage": "https://tablacus.github.io/explorer.html",
+    "architecture": {
+        "32bit": {
+            "bin": [
+                [
+                    "TE32.exe",
+                    "te"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "TE32.exe",
+                    "Tablacus Explorer"
+                ]
+            ]
+        },
+        "64bit": {
+            "bin": [
+                [
+                    "TE64.exe",
+                    "te"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "TE64.exe",
+                    "Tablacus Explorer"
+                ]
+            ]
+        }
+    },
+    "version": "20.5.30",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.5.30/te200530.zip",
+    "checkver": {
+        "url": "https://github.com/tablacus/TablacusExplorer/releases",
+        "regex": "/download/(\\d+\\.\\d+\\.\\d+)/te(\\d+).zip\"",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$match1/te$match2.zip",
+        "hash": {
+            "url": "https://github.com/tablacus/TablacusExplorer/releases",
+            "regex": "virustotal.com/gui/file/([a-fA-F0-9]+)/detection"
+        }
+    }
+}
