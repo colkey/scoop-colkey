@@ -39,6 +39,10 @@
         "regex": "/download/(\\d+\\.\\d+\\.\\d+)/te(\\d+).zip\"",
         "replace": "$1"
     },
+    "persist": [
+        "addons",
+        "config"
+    ],
     "autoupdate": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$match1/te$match2.zip",
         "hash": {
