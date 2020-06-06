@@ -4,11 +4,11 @@
     "homepage": "http://k-takata.o.oo7.jp/mysoft/bregonig.html",
     "hash": "15f58dd292aa6fc8fd592fa97a75d58b5680ddf7aa66ba10a2dd5c9f0ee159c1",
     "architecture": {
-        "32bit": {
-            "extract_dir": ""
-        },
         "64bit": {
-            "extract_dir": "x64"
+            "post_install": [
+                "Move-Item $dir\\bregonig.dll $dir\\bregonig_x32.dll",
+                "Copy-Item $dir\\x64\\bregonig.dll $dir\\bregonig.dll"
+            ]
         }
     },
     "checkver": {
@@ -16,6 +16,6 @@
         "replace": "${major}.${minor}"
     },
     "autoupdate": {
-        "url": "https://bitbucket.org/k_takata/bregonig/downloads/bron$matchMajor$matchMinor.zip"
+        "url": "https://bitbucket.org/k_takata/bregonig/downloads/bron$majorVersion$minorVersion.zip"
     }
 }
