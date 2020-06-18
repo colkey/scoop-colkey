@@ -1,11 +1,12 @@
 {
     "version": "1.41.07",
     "homepage": "https://www.inasoft.org/numlklk/",
-    "bin": [
-        [
-            "NumLockLock.exe",
-            "NumLockLock"
-        ]
+    "pre_install": [
+        "if (-not (Test-Path \"$persist_dir\\NumLockLock.ini\")) { New-Item \"$dir\\NumLockLock.ini\" -ItemType File | Out-Null }",
+        "Rename-Item \"$dir\\NumLockLock.exe\" NumLockLock_o.exe"
+    ],
+    "persist": [
+        "NumLockLock.ini"
     ],
     "architecture": {
         "32bit": {
