@@ -18,11 +18,7 @@
         "7zip",
         "bregonig"
     ],
-    "persist": [
-        "sakura.ini"
-    ],
     "pre_install": [
-        "if (-not (Test-Path \"$persist_dir\\sakura.ini\")) { New-Item \"$dir\\sakura.ini\" -ItemType File | Out-Null }",
         "7z e -aoa -o\"$dir\" -- \"$dir\\QuickStartV2.zip\" \"sakura.exe.manifest\" | Out-Null",
         "Set-ItemProperty -Path \"$dir\\sakura.exe\" -Name LastWriteTime -Value $(Get-Date)",
         "Copy-Item \"$(appdir bregonig)\\current\\bregonig.dll\" -Destination $dir"
