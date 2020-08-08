@@ -44,10 +44,6 @@
         "config"
     ],
     "autoupdate": {
-        "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$match1/te$match2.zip",
-        "hash": {
-            "url": "https://github.com/tablacus/TablacusExplorer/releases",
-            "regex": "virustotal.com/gui/file/([a-fA-F0-9]+)/detection"
-        }
+        "url": "https://github.com/tablacus/TablacusExplorer/releases/download/$match1/te$match2.zip"
     }
 }
