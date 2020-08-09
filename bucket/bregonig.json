@@ -6,16 +6,15 @@
     "architecture": {
         "64bit": {
             "post_install": [
-                "Move-Item $dir\\bregonig.dll $dir\\bregonig_x32.dll",
-                "Copy-Item $dir\\x64\\bregonig.dll $dir\\bregonig.dll"
+                "Move-Item \"$dir\\bregonig.dll\" \"$dir\\bregonig_x32.dll\"",
+                "Copy-Item \"$dir\\x64\\bregonig.dll\" \"$dir\\bregonig.dll\""
             ]
         }
     },
     "checkver": {
-        "regex": "bregonig\\.dll Ver\\.(?<major>\\d+)\\.(?<minor>\\d+)",
-        "replace": "${major}.${minor}"
+        "regex": "bregonig\\.dll Ver.([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "https://bitbucket.org/k_takata/bregonig/downloads/bron$majorVersion$minorVersion.zip"
+        "url": "https://bitbucket.org/k_takata/bregonig/downloads/bron$cleanVersion.zip"
     }
 }
