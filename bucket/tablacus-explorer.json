@@ -1,6 +1,6 @@
 {
     "license": "MIT",
-    "hash": "ff482c059b6fdee88a83c5e4b178eb0faba042240b9edfb95a6288ea5c758d0a",
+    "hash": "e263caabe7735a78c078e8dbea0afaed0d65ce86432f90b6021d972265b2057a",
     "homepage": "https://tablacus.github.io/explorer.html",
     "architecture": {
         "32bit": {
@@ -32,8 +32,8 @@
             ]
         }
     },
-    "version": "20.9.22",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.9.22/te200922.zip",
+    "version": "20.9.24",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/20.9.24/te200924.zip",
     "checkver": {
         "url": "https://github.com/tablacus/TablacusExplorer/releases",
         "regex": "/download/(\\d+\\.\\d+\\.\\d+)/te(\\d+).zip\"",
