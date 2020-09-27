@@ -1,7 +1,7 @@
 {
-    "version": "0.1.0",
-    "url": "https://github.com/colkey/release-test/releases/download/v0.1.0/README.md",
-    "hash": "8d79ef7b2be43af422d2f2cc467adf7e4a7962c4e3de9b2af18b7a911057fae3",
+    "version": "0.3.1",
+    "url": "https://github.com/colkey/release-test/releases/download/v0.3.1/README.md",
+    "hash": "812eab57b6c19f91a38a78bdaf3f370894abccae0b4d7f309e84a260a4e02bc4",
     "homepage": "https://github.com/colkey/release-test",
     "checkver": "github",
     "autoupdate": {
