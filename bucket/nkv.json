@@ -15,14 +15,14 @@
         "config",
         "keymap"
     ],
-    "version": "0.11.2",
+    "version": "0.11.3",
     "checkver": {
         "regex": "nkv-([\\d.]+).zip\""
     },
     "autoupdate": {
         "url": "https://www.nk2.org/nkv/archive/nkv-$version.zip"
     },
-    "hash": "317af65239b47afe81a3da1d7a2bfc2c12422f46e517a6bc229ce3792a4154d8",
+    "hash": "b5a455ec89f6abe9530190873a616c4c6ec4363d581576b4bdea30fd5560c5f1",
     "license": "zlib",
-    "url": "https://www.nk2.org/nkv/archive/nkv-0.11.2.zip"
+    "url": "https://www.nk2.org/nkv/archive/nkv-0.11.3.zip"
 }
