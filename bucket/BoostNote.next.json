@@ -1,7 +1,7 @@
 {
     "url": "https://github.com/BoostIO/BoostNote.next/releases/download/v0.8.2/boost-note-win.exe#dl.7z",
     "homepage": "https://boostnote.io",
-    "version": "v0.8.2",
+    "version": "0.8.2",
     "license": {
         "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/BoostIO/BoostNote.next/blob/master/LICENSE.md"
@@ -25,9 +25,15 @@
             ]
         }
     },
+    "hash": "bfb7d7b6ec1addb7fdf7ff5e5012666009b7fe826eeaff6d56cb00481de9a4a3",
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\\\" -Recurse",
         "Remove-Item \"$dir\\Uninstall Boost Note.exe\""
     ],
-    "hash": "bfb7d7b6ec1addb7fdf7ff5e5012666009b7fe826eeaff6d56cb00481de9a4a3"
+    "checkver": {
+        "github": "https://github.com/BoostIO/BoostNote.next"
+    },
+    "autoupdate": {
+        "url": "https://github.com/BoostIO/BoostNote.next/releases/download/v$version/boost-note-win.exe#dl.7z"
+    }
 }
