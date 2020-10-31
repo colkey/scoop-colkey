@@ -15,14 +15,10 @@
     "depends": "7zip",
     "architecture": {
         "64bit": {
-            "pre_install": [
-                "7z x -aoa -o\"$dir\" -- \"$dir\\`$PLUGINSDIR\\app-64.7z\""
-            ]
+            "pre_install": "7z x -aoa -o\"$dir\" -- \"$dir\\`$PLUGINSDIR\\app-64.7z\""
         },
         "32bit": {
-            "pre_install": [
-                "7z x -aoa -o\"$dir\" -- \"$dir\\`$PLUGINSDIR\\app-32.7z\""
-            ]
+            "pre_install": "7z x -aoa -o\"$dir\" -- \"$dir\\`$PLUGINSDIR\\app-32.7z\""
         }
     },
     "hash": "bfb7d7b6ec1addb7fdf7ff5e5012666009b7fe826eeaff6d56cb00481de9a4a3",
